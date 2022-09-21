@@ -1,24 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EyD-hj-ItQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Switch-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Live_Demo___UI_Bar__TabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cim-qu-VDC">
+                                <rect key="frame" x="182.5" y="59" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="Aln-Me-mRY"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thinking..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBq-0v-kI3">
+                                <rect key="frame" x="167.5" y="105" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gp-Ki-GvS">
+                                <rect key="frame" x="64" y="165" width="92" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Switch Off"/>
+                                <connections>
+                                    <action selector="switchOffButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJ9-SZ-dl6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKR-ci-Zc5">
+                                <rect key="frame" x="269" y="164" width="90" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Switch On"/>
+                                <connections>
+                                    <action selector="switchOnButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cI0-SP-Cch"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qBq-0v-kI3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4dL-eu-Pth"/>
+                            <constraint firstItem="qBq-0v-kI3" firstAttribute="top" secondItem="cim-qu-VDC" secondAttribute="bottom" constant="15" id="RkE-CK-WSa"/>
+                            <constraint firstItem="cim-qu-VDC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="chs-sv-VYZ"/>
+                            <constraint firstItem="cim-qu-VDC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dQP-Ma-g3C"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Switch" image="switch.2" catalog="system" id="hLJ-uw-aTD"/>
+                    <connections>
+                        <outlet property="switchOnButton" destination="kKR-ci-Zc5" id="1mJ-GA-XwW"/>
+                        <outlet property="switchStatusLabel" destination="qBq-0v-kI3" id="P3f-N2-ew5"/>
+                        <outlet property="switchoffButton" destination="0gp-Ki-GvS" id="piw-RL-OIf"/>
+                        <outlet property="theSwitch" destination="cim-qu-VDC" id="90n-D5-oJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="706" y="80"/>
+        </scene>
+        <!--MapView Controller-->
+        <scene sceneID="RS7-Z8-nok">
+            <objects>
+                <viewController id="ziZ-Ug-xvs" userLabel="MapView Controller" customClass="MyMapDemoController" customModule="Live_Demo___UI_Bar__TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="yCr-tE-9kf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="gbr-4O-MOh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtM-rU-tbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434.7826086956522" y="79.6875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZcQ-Vn-VWt">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EyD-hj-ItQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M6m-J5-CnN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="RE6-a3-HvY"/>
+                        <segue destination="ziZ-Ug-xvs" kind="relationship" relationship="viewControllers" id="Xwn-gP-EU0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6B-Lb-YZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="79.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="switch.2" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

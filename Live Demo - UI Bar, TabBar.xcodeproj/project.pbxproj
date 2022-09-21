@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		BC749D7D28DA80A000CAD453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC749D7C28DA80A000CAD453 /* AppDelegate.swift */; };
 		BC749D7F28DA80A000CAD453 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC749D7E28DA80A000CAD453 /* SceneDelegate.swift */; };
-		BC749D8128DA80A000CAD453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC749D8028DA80A000CAD453 /* ViewController.swift */; };
+		BC749D8128DA80A000CAD453 /* MySwitchDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC749D8028DA80A000CAD453 /* MySwitchDemoController.swift */; };
 		BC749D8428DA80A000CAD453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC749D8228DA80A000CAD453 /* Main.storyboard */; };
 		BC749D8628DA80A500CAD453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC749D8528DA80A500CAD453 /* Assets.xcassets */; };
 		BC749D8928DA80A500CAD453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC749D8728DA80A500CAD453 /* LaunchScreen.storyboard */; };
 		BC749D9428DA80A600CAD453 /* Live_Demo___UI_Bar__TabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC749D9328DA80A600CAD453 /* Live_Demo___UI_Bar__TabBarTests.swift */; };
 		BC749D9E28DA80A600CAD453 /* Live_Demo___UI_Bar__TabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC749D9D28DA80A600CAD453 /* Live_Demo___UI_Bar__TabBarUITests.swift */; };
 		BC749DA028DA80A600CAD453 /* Live_Demo___UI_Bar__TabBarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC749D9F28DA80A600CAD453 /* Live_Demo___UI_Bar__TabBarUITestsLaunchTests.swift */; };
+		BC749DAD28DA8CC600CAD453 /* MyMapDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC749DAC28DA8CC600CAD453 /* MyMapDemoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		BC749D7928DA80A000CAD453 /* Live Demo - UI Bar, TabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Demo - UI Bar, TabBar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC749D7C28DA80A000CAD453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC749D7E28DA80A000CAD453 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC749D8028DA80A000CAD453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC749D8028DA80A000CAD453 /* MySwitchDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwitchDemoController.swift; sourceTree = "<group>"; };
 		BC749D8328DA80A000CAD453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC749D8528DA80A500CAD453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC749D8828DA80A500CAD453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		BC749D9928DA80A600CAD453 /* Live Demo - UI Bar, TabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Live Demo - UI Bar, TabBarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC749D9D28DA80A600CAD453 /* Live_Demo___UI_Bar__TabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live_Demo___UI_Bar__TabBarUITests.swift"; sourceTree = "<group>"; };
 		BC749D9F28DA80A600CAD453 /* Live_Demo___UI_Bar__TabBarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live_Demo___UI_Bar__TabBarUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		BC749DAC28DA8CC600CAD453 /* MyMapDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapDemoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				BC749D7C28DA80A000CAD453 /* AppDelegate.swift */,
 				BC749D7E28DA80A000CAD453 /* SceneDelegate.swift */,
-				BC749D8028DA80A000CAD453 /* ViewController.swift */,
+				BC749D8028DA80A000CAD453 /* MySwitchDemoController.swift */,
 				BC749D8228DA80A000CAD453 /* Main.storyboard */,
 				BC749D8528DA80A500CAD453 /* Assets.xcassets */,
 				BC749D8728DA80A500CAD453 /* LaunchScreen.storyboard */,
 				BC749D8A28DA80A500CAD453 /* Info.plist */,
+				BC749DAC28DA8CC600CAD453 /* MyMapDemoController.swift */,
 			);
 			path = "Live Demo - UI Bar, TabBar";
 			sourceTree = "<group>";
@@ -258,7 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC749D8128DA80A000CAD453 /* ViewController.swift in Sources */,
+				BC749D8128DA80A000CAD453 /* MySwitchDemoController.swift in Sources */,
+				BC749DAD28DA8CC600CAD453 /* MyMapDemoController.swift in Sources */,
 				BC749D7D28DA80A000CAD453 /* AppDelegate.swift in Sources */,
 				BC749D7F28DA80A000CAD453 /* SceneDelegate.swift in Sources */,
 			);
